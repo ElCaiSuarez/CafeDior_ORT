@@ -1,0 +1,215 @@
+/* Julian Modugno y Juan Carlos Suarez - v6(2022-04-25)  */
+* {
+  /* Selector universal - Para generalizar margenes*/
+  margin: 0px;
+  padding: 0px;
+  font-family: Schoolbell;
+  background: #2a2a2a;
+}
+body, header, section, footer, nav, figure{
+  display: block;
+  margin: 1px;
+  padding: 1px;
+}
+@font-face {
+  /* Referencia Fuente Externa*/
+  font-family: 'Feeling-Passionate';
+  src: url('Feeling Passionate.otf');
+}
+@font-face {
+  /* Referencia Fuente Externa*/
+  font-family: 'Schoolbell';
+  src: url('Schoolbell-Regular.ttf');
+}
+#agrupar {
+  width: fit-content;
+  margin: auto;
+}
+.titulo {
+  color: white;
+  font-family: Feeling-Passionate;
+  font-size: 60px;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+.sub-titulo {
+  color: white;
+  font-family: Schoolbell;
+  font-size: 30px;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+  background: #2a2a2a;
+
+}
+/*nav ul {
+  display: flex;
+}
+.lista-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.opcion-nav{
+  list-style:none ;
+}
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px black;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: dimgrey;
+}
+*/
+.formulario-datos-pedido{
+  /*CLASS FORMULARIO - Datos Pedido*/
+}
+.contenedor-grid1{
+  display: grid;
+  margin: inherit;
+}
+.contenedor-grid1-subContenedor1 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.contenedor-grid1-subContenedor2 {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  height: 130px;
+}
+.contenedor-grid2{
+  display: grid;
+  width: 400px;
+  height: 130px;
+}
+.contenedor-grid2-subContenedor1 {
+  display: flex;
+  align-items: center;
+}
+.contenedor-grid2-subContenedor2 {
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor-flex1{
+  display: flex;
+  margin: 10px;
+}
+.contenedor-flex1-subContenedor1 {
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedor-flex1-subContenedor2 {
+  align-items: center;
+  justify-content: space-around;
+}
+.categoria{
+  /*CLASS CATEGORIA*/
+}
+.categoria h3 {
+  color: white;
+  font-size: 30px;
+  font-family: Schoolbell;
+  color: #63a9b1;
+}
+.imagen-categoria{
+}
+.producto{
+/*CLASS PRODUCTO*/
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 25px;
+  justify-content: space-between;
+}
+.imagen-producto{
+
+}
+.nombre-producto{
+  color: #e08826;
+}
+.precio-producto{
+  color: #e08826;
+}
+.opcion-producto-ul{
+  width: 170px;
+}
+.opcion-producto{
+    display: flex;
+    color: white;
+}
+.opcion-producto-cant{
+  text-align: center;
+  margin-inline-start: auto;
+  background-color: lightgrey;
+  color:  white;
+}
+.opcion-producto-cant-button {
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  color: white;
+  border-color: white;
+}
+.opcion-producto-cant-button:hover {
+  background-color: #white;
+  color: dimgrey;
+}
+.formulario-datos-cliente{
+  /*CLASS FORMULARIO - Datos Cliente*/
+}
+#contenedor-flex2{
+  display: flex;
+  justify-content: space-around;
+}
+#contenedor-flex2-subContenedor1 {
+  display: grid;
+  margin: auto;
+  color: white;
+}
+#contenedor-flex2-subContenedor2 {
+  /*width: 400px;*/
+  margin: auto;
+  text-align: -webkit-center;
+}
+#contenedor-submit{
+  text-align: center;
+}
+#submit {
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  color: white;
+  border-color: white;
+  width: 500px;
+}
+#submit:hover {
+  background-color: #white;
+  color: dimgrey;
+}
+footer ul {
+  display: flex;
+}
+.lista-footer{
+display: flex;
+justify-content: space-around;
+}
+.opcion-footer{
+  list-style: none;
+  color: whitesmoke;
+}
+footer ul li a {
+  color: #white;
+  font-weight: bold;
+}
+footer a {
+  font-size: 15px;
+  text-shadow: 1px 1px 5px black;
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: dimgrey;
+}
+

@@ -1,0 +1,445 @@
+<!-- Julian Modugno y Juan Carlos Suarez - v6(2022-04-25) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" />
+    <!--<script src="scripts/jsForm.js"></script> BUENA PRACTICA ES PONERLO ANTES DE CERRAR EL BODY-->
+    <title>Menu Cafe Dior - Resto-Bar</title>
+</head>
+<body>
+    <div id="agrupar">
+        <header>
+            <h1 class="titulo">Cafe Dior</h1>
+        </header>
+        <!-- Informacion Principal del Menu - Formulario-->
+        <form name="elPedido" method="post" action="procesar.php">
+            <section class="formulario-datos-pedido">
+                <!-- Categoria A-->
+                <div class="contenedor-grid1">
+                    <!-- Categoria A - Contenedor Nombre y Banner-->
+                    <div class="contenedor-grid1-subContenedor1">
+                        <header class="categoria">
+                            <h3>&lt;---------------Cafeteria e Infusiones---------------</h3>
+                        </header>
+                        <figure class="imagen-categoria">
+                            <img src="images/cat1.jpg" alt="CAFETERÍA E INFUSIONES" width="100">
+                        </figure>
+                    </div>
+                    <!-- Categoria A - Contenedor Productos Fila 1-->
+                    <div class="contenedor-grid1-subContenedor2">
+                        <!-- Producto 1-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 1 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat1.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Café en pocillo</p>
+                                <p class="precio-producto">$220,00</p>
+                            </div>
+                            <!-- Producto 1 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Cafe solo</p>
+                                        <!-- <input name="catA-prod1-op1" type="button" value="  +  " class="opcion-producto-cant-button"/>-->
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod1-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Cafe cortado</p>
+                                        <!-- <input name="catA-prod1-op2" type="checkbox" value="catA-prod1-op2"/>-->
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod1-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 1-->
+                        <!-- Producto 2-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 2 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat1.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Café en jarrito</p>
+                                <p class="precio-producto">$320,00</p>
+                            </div>
+                            <!-- Producto 2 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Cafe solo</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Cafe cortado</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 2-->
+                    </div><!-- Categoria A - Contenedor Productos Fila 1-->
+                    <!-- Categoria A - Contenedor Productos Fila 2-->
+                    <div class="contenedor-grid1-subContenedor2">
+                        <!-- Producto 3-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 3 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat1.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Café en taza</p>
+                                <p class="precio-producto">$380,00</p>
+                            </div>
+                            <!-- Producto 3 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Cafe doble</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Cafe con leche</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Lagrima</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op3-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Capuchino</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op4-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Submarino</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op5-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 3-->
+                        <!-- Producto 4-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 4 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat1.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Te en tetera</p>
+                                <p class="precio-producto">$320,00</p>
+                            </div>
+                            <!-- Producto 4 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Te negro</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod4-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Te verde</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 4-->
+                    </div><!-- Categoria A - Contenedor Productos Fila 2-->
+                </div><!-- Categoria A - Contenedor Nombre y Banner - Grid1 -->
+                <!-- Categoria B-->
+                <div class="contenedor-grid1">
+                    <!-- Categoria B - Contenedor Nombre y Banner-->
+                    <div class="contenedor-grid1-subContenedor1">
+                        <header class="categoria">
+                            <h3>&lt;---------------Panaderia y Pasteleria---------------</h3>
+                        </header>
+                        <figure class="imagen-categoria">
+                            <img src="images/cat2.jpg" alt="CAFETERÍA E INFUSIONES" width="100">
+                        </figure>
+                    </div>
+                    <!-- Categoria B - Contenedor Productos Fila 1-->
+                    <div class="contenedor-grid1-subContenedor2">
+                        <!-- Producto 1-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 1 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat2.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Mini cake</p>
+                                <p class="precio-producto">$490,00</p>
+                            </div>
+                            <!-- Producto 3 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Chocotorta</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Rogel</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Tiramisu</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op3-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Oreo</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op4-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Manzana</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op5-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 1-->
+                        <!-- Producto 2-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 2 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat2.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Delicias</p>
+                                <p class="precio-producto">$320,00</p>
+                            </div>
+                            <!-- Producto 2 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Coco y DDL</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Limon</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 2-->
+                    </div><!-- Categoria B - Contenedor Productos Fila 1-->
+                    <!-- Categoria B - Contenedor Productos Fila 2-->
+                    <div class="contenedor-grid1-subContenedor2">
+                        <!-- Producto 3-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 3 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat2.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Porcion de torta</p>
+                                <p class="precio-producto">$620,00</p>
+                            </div>
+                            <!-- Producto 3 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Lemon pie</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Rogel</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Mouse de chocolate</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op3-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Cheese cake</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op4-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Brownie</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op5-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 3-->
+                        <!-- Producto 4-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 4 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat2.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Muffin</p>
+                                <p class="precio-producto">$320,00</p>
+                            </div>
+                            <!-- Producto 4 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Vainilla y DDL</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod4-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Chocolate y DDL</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 4-->
+                    </div><!-- Categoria B - Contenedor Productos Fila 2-->
+                </div><!-- Categoria B - Contenedor Nombre y Banner - Grid1 -->
+                <!-- Categoria C-->
+                <div class="contenedor-grid1">
+                    <!-- Categoria C - Contenedor Nombre y Banner-->
+                    <div class="contenedor-grid1-subContenedor1">
+                        <header class="categoria">
+                            <h3>&lt;---------------Bebidas y Batidos---------------</h3>
+                        </header>
+                        <figure class="imagen-categoria">
+                            <img src="images/cat3.jpg" alt="CAFETERÍA E INFUSIONES" width="100">
+                        </figure>
+                    </div>
+                    <!-- Categoria C - Contenedor Productos Fila 1-->
+                    <div class="contenedor-grid1-subContenedor2">
+                        <!-- Producto 1-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 1 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat3.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Batido</p>
+                                <p class="precio-producto">$450,00</p>
+                            </div>
+                            <!-- Producto 1 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Arandanos</p>
+                                        <!-- <input name="catA-prod1-op1" type="button" value="  +  " class="opcion-producto-cant-button"/>-->
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod1-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Coco</p>
+                                        <!-- <input name="catA-prod1-op2" type="checkbox" value="catA-prod1-op2"/>-->
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod1-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 1-->
+                        <!-- Producto 2-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 2 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat3.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Jugo</p>
+                                <p class="precio-producto">$380,00</p>
+                            </div>
+                            <!-- Producto 2 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Exprimido de naranja</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Limonada</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 2-->
+                    </div><!-- Categoria C - Contenedor Productos Fila 1-->
+                    <!-- Categoria C - Contenedor Productos Fila 2-->
+                    <div class="contenedor-grid1-subContenedor2">
+                        <!-- Producto 3-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 3 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat3.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Licuado</p>
+                                <p class="precio-producto">$380,00</p>
+                            </div>
+                            <!-- Producto 3 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Naranja y maracuya</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Banana y leche</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Frutos rojos</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod3-op3-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 3-->
+                        <!-- Producto 4-->
+                        <div class="contenedor-grid2">
+                            <!-- Producto 4 - Contenedor Imagen, Nombre y Precio-->
+                            <div class="contenedor-grid2-subContenedor1 producto">
+                                <figure class="imagen-producto">
+                                    <img src="images/cat3.jpg" alt="cafe" width="50">
+                                </figure>
+                                <p class="nombre-producto">Agua y gaseosa</p>
+                                <p class="precio-producto">$240,00</p>
+                            </div>
+                            <!-- Producto 4 - Contenedor Formulario-->
+                            <div class="contenedor-grid2-subContenedor2">
+                                <ul class="opcion-producto-ul">
+                                    <li class="opcion-producto">
+                                        <p>Gaseosa</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod4-op1-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                    <li class="opcion-producto">
+                                        <p>Agua mineral</p>
+                                        <input class="opcion-producto-cant" type="number" name="catA-prod2-op2-cant" placeholder="0" min="0" max="9" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- Producto 4-->
+                    </div><!-- Categoria C - Contenedor Productos Fila 2-->
+                </div><!-- Categoria C - Contenedor Nombre y Banner - Grid1 -->
+            </section>
+            <section class="formulario-datos-cliente">
+                <h2 class="sub-titulo">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h2>
+                <div id="contenedor-flex2">
+                    <div id="contenedor-flex2-subContenedor1">
+                        <label for="nombre">Nombre: <br><input pattern="[A-Za-z]{3,}" name="nombre" id="nombre" placeholder="Ingrese su Nombre" autocomplete="off" required maxlength="20" style="color: white;"></label>
+                        <label for="email">E-Mail: <br><input type="email" name="email" id="email" placeholder="Ingrese su E-Mail" autocomplete="off" required style="color: white;"></label>
+                        <label for="comentario">Comentario: (Opcional)<br><textarea name="comentario" id="comentario" rows="6" cols="50" placeholder="Ingrese su Comentario"></textarea> </label>
+                    </div>
+                    <div id="contenedor-flex2-subContenedor2">
+                        <figure>
+                            <img src="images/promo.jpg" alt="Promo">
+                        </figure>
+                    </div>
+                </div>
+                <div id="contenedor-submit">
+                    <input type="button" name="enviar" value="Enviar Pedido" id="submit">
+                </div>
+            </section>
+        </form>
+        <h2 class="sub-titulo">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h2>
+        <!-- Barra Institucional -->
+        <footer>
+            <ul class="lista-footer">
+                <li class="opcion-footer">Cafe Dior -</li>
+                <li class="opcion-footer"><a href="https://www.instagram.com"><p>Instagram</p></a></li>
+                <li class="opcion-footer"><a href="https://www.facebook.com"><p>Facebook</p></a></li>
+                <li class="opcion-footer"><a href="https://www.twitter.com"><p>Twitter</p></a></li>
+                <li class="opcion-footer"><p>- © 2022 Juan Carlos Suarez</p></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="scripts/jsForm.js"></script>
+</body>
+</html>
